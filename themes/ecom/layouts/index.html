@@ -13,8 +13,20 @@
 
 
 
+      <body>
+        <section class="section">
+          <div class="container">
+            <h1 class="title">Section</h1>
+            <h2 class="subtitle">
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+            </h2>
+          </div>
+        </section>
+      </body>
+
+
     <!-- <script defer src="js/script.js"></script> -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     (function() {
         var burger = document.querySelector('.burger');
         var nav = document.querySelector('#' + burger.dataset.target);
@@ -24,8 +36,8 @@
             nav.classList.toggle('is-active');
         });
     })();
+    </script> -->
 
-
-    </script>
+        {{partial "footer.html" .}}
   </body>
 </html>
