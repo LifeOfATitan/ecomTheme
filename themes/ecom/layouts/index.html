@@ -7,19 +7,18 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> -->
     <link rel="stylesheet" href="css/mystyles.css">
 
-
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 
     <!-- <link rel="stylesheet" href="css/debug.css"> -->
 
   </head>
-
   <body>
 
       {{partial "header.html" .}}
 
       {{partial "product.html" .}}
-
 
       <body>
         <section class="section">
@@ -34,6 +33,12 @@
 
 
     <script defer src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+             var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+         });
+    </script>
 
         {{partial "footer.html" .}}
   </body>
