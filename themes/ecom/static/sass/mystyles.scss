@@ -2,7 +2,8 @@
 //override variables frmo here
 
 $primary: lightblue;
-@import "/Users/Phenomeno/Documents/Creations/WebDev/ecommerce/node_modules/bulma/bulma.sass";
+@import "/Users/Phenomeno/Documents/Creations/WebDev/ecommerce/node_modules/bulma/bulma";
+@import "/Users/Phenomeno/Documents/Creations/WebDev/ecommerce/node_modules/bulma-carousel/dist/css/bulma-carousel";
 
 html{
     hero-head: $primary;

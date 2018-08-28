@@ -4,14 +4,16 @@
   "description": "",
   "main": "themes/ecom/static/sass/mystyles.scss",
   "scripts": {
-      "css-build": "node-sass --omit-source-map-url themes/ecom/static/sass/mystyles.scss themes/ecom/static/css/mystyles.css",
+    "css-build": "node-sass --omit-source-map-url themes/ecom/static/sass/mystyles.scss themes/ecom/static/css/mystyles.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
   "author": "Abdoulaye",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "bulma": "^0.7.1",
+    "bulma-carousel": "^3.0.0",
     "node-sass": "^4.9.3"
   }
 }
