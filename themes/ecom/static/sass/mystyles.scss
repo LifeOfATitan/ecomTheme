@@ -1,12 +1,15 @@
 @charset "utf-8";
 //override variables frmo here
 
-$primary: lightblue;
+$primary: dimgray;
+$sucess: darkolivegreen;
+
 @import "/Users/Phenomeno/Documents/Creations/WebDev/ecommerce/node_modules/bulma/bulma";
 @import "/Users/Phenomeno/Documents/Creations/WebDev/ecommerce/node_modules/bulma-carousel/dist/css/bulma-carousel";
 
-html{
-    hero-head: $primary;
-}
+// html{
+//     hero-head: $primary;
+// }
+
 
 //TODO: Minimize CSS https://github.com/scniro/gulp-clean-css

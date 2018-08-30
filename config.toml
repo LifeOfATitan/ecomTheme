@@ -1,4 +1,7 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ecommerce Store"
 theme = "ecom"
+
+[permalinks]
+  products = "/:section/:filename"
