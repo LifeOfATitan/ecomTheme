@@ -27,9 +27,9 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title">Ecom Store</h1>
-      <h2 class="subtitle">Sick Slogan</h2>
-      <button class="button is-rounded is-success is-outlined is-pulled-left">Shop Specials</button>
+      <h1 class="title">{{ .Site.Params.titleHeader }}</h1>
+      <h2 class="subtitle">{{ .Site.Params.subtitle }}</h2>
+      <button class="button is-rounded is-success is-outlined is-pulled-left">{{ .Site.Params.headerBuyButton }}</button>
     </div>
   </div>
 </header>

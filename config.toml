@@ -3,5 +3,25 @@ languageCode = "en-us"
 title = "Ecommerce Store"
 theme = "ecom"
 
+[params]
+
+titleHeader = "Pallete wetting headline"
+subtitle = "Sick Slogan"
+headerBuyButton = "Shop Specials"
+
 [permalinks]
   products = "/:section/:filename"
+
+
+[menu]
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        title = "Blog Section"
+        url = "/blog/"
+
+    [[menu.main]]
+        identifier = "products"
+        name = "Products"
+        title = "Our Products"
+        url = '/products/'
