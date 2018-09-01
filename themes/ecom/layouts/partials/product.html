@@ -34,10 +34,10 @@
 
                 </div>
                 <div align="center" class="column">
-                    <p class="title">Best Selling Product</p>
-                    <p class="description">Product Description</p>
-                    <p class="details">Product details Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, natus.</p>
-                    <button class="button is-success is-outlined is-rounded">Add to Cart</button>
+                    <p class="title">{{ .Site.Params.bigProduct.title }}</p>
+                    <p class="description">{{ .Site.Params.bigProduct.description }}</p>
+                    <p class="details">{{ .Site.Params.bigProduct.details }}</p>
+                    <button class="button is-success is-outlined is-rounded">{{ .Site.Params.bigProduct.buttonText }}</button>
                 </div>
             </div>
         </div>

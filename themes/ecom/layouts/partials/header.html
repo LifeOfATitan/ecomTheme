@@ -16,9 +16,9 @@
         </div>
         <div id="navbarMenuHero" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">Home</a>
-            <a class="navbar-item">Products</a>
-            <a class="navbar-item">Sepcial Offers</a>
+              {{ range .Site.Menus.main }}
+            <a class="navbar-item" href="{{ .URL }}/">{{ .Name }}</a>
+              {{ end }}
           </div>
         </div>
       </div>

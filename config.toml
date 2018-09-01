@@ -9,6 +9,33 @@ titleHeader = "Pallete wetting headline"
 subtitle = "Sick Slogan"
 headerBuyButton = "Shop Specials"
 
+    [params.bigProduct]
+        enable = true
+        title = 'Best Selling Product'
+        description = 'Product Description'
+        details = 'Product details Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, natus.'
+        buttonText = 'Buy My Shit'
+        image1 = '/img/source.jpg'
+        image2 = '/img/source2.jpg'
+        image3 = '/img/source3.jpg'
+        image4 = '/img/source4.jpg'
+
+    [params.topCategories]
+        enable = true
+            [params.topCategories.1]
+                title = 'Top Categories 1'
+                img = 'https://bulma.io/images/placeholders/128x128.png'
+                buttonText = 'Buy Me Baby'
+            [params.topCategories.2]
+                title = 'Top Categories 2'
+                img = 'https://bulma.io/images/placeholders/128x128.png'
+                buttonText = 'Buy Me Now'
+            [params.topCategories.3]
+                title = 'Top Categories 3'
+                img = 'https://bulma.io/images/placeholders/128x128.png'
+                buttonText = 'Hurry Baby'
+
+
 [permalinks]
   products = "/:section/:filename"
 
@@ -18,10 +45,19 @@ headerBuyButton = "Shop Specials"
         identifier = "blog"
         name = "Blog"
         title = "Blog Section"
-        url = "/blog/"
+        weight = 1
+        url = "/blog"
 
     [[menu.main]]
         identifier = "products"
         name = "Products"
         title = "Our Products"
-        url = '/products/'
+        weight = 2
+        url = '/products'
+
+    [[menu.main]]
+        identifier = "bestSellers"
+        name = "Best Sellers"
+        title = 'The ones people like the most'
+        weight = 3
+        url = '/best-sellers'
