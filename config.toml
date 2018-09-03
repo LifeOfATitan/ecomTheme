@@ -8,6 +8,7 @@ theme = "ecom"
 titleHeader = "Pallete wetting headline"
 subtitle = "Sick Slogan"
 headerBuyButton = "Shop Specials"
+headerImg = "https://bulma.io/images/bulma-type-white.png"
 
     [params.bigProduct]
         enable = true
@@ -15,26 +16,28 @@ headerBuyButton = "Shop Specials"
         description = 'Product Description'
         details = 'Product details Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, natus.'
         buttonText = 'Buy My Shit'
-        image1 = '/img/source.jpg'
-        image2 = '/img/source2.jpg'
-        image3 = '/img/source3.jpg'
-        image4 = '/img/source4.jpg'
+        img1 = 'https://wikiki.github.io/images/merry-christmas.jpg'
+        img2 = 'https://wikiki.github.io/images/singer.jpg'
+        img3 = 'https://wikiki.github.io/images/sushi.jpg'
+        img4 = 'https://wikiki.github.io/images/life.jpg'
 
     [params.topCategories]
         enable = true
-            [params.topCategories.1]
-                title = 'Top Categories 1'
+            [params.topCategories.left]
+                title = 'Do You like This?'
                 img = 'https://bulma.io/images/placeholders/128x128.png'
                 buttonText = 'Buy Me Baby'
-            [params.topCategories.2]
-                title = 'Top Categories 2'
+                url = '#'
+            [params.topCategories.center]
+                title = 'How about this?'
                 img = 'https://bulma.io/images/placeholders/128x128.png'
                 buttonText = 'Buy Me Now'
-            [params.topCategories.3]
-                title = 'Top Categories 3'
+                url = '/products'
+            [params.topCategories.right]
+                title = 'You will love this!'
                 img = 'https://bulma.io/images/placeholders/128x128.png'
                 buttonText = 'Hurry Baby'
-
+                url = '#'
 
 [permalinks]
   products = "/:section/:filename"

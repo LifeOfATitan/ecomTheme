@@ -1,32 +1,41 @@
 <body>
     <!-- TODO: Make links clickable -->
 
-    <div class="columns is-gapless">
+    <div class="columns is-gapless is-mobile">
         <div class="column">
-            <div class="title has-background-primary">Top Category</div>
+            <div class="title has-background-primary" align="center">
+                {{ .Site.Params.topCategories.left.title }}</div>
             <figure class="image">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="">
+                <img src="{{ .Site.Params.topCategories.left.img }}" alt="">
             </figure>
                 <div class="box has-text-centered">
-                    <a href="#" class="button is-success">Shop</a>
+                    <a href="{{ .Site.Params.topCategories.left.url }}"
+                    class="button is-success">
+                    {{ .Site.Params.topCategories.left.buttonText }}</a>
                 </div>
         </div>
         <div class="column is-success">
-            <div class="title has-background-success">Top Category</div>
+            <div class="title has-background-success" align="center">
+                {{ .Site.Params.topCategories.center.title }}</div>
             <figure class="image">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="">
+                <img src="{{ .Site.Params.topCategories.center.img }}" alt="">
             </figure>
                 <div class="box has-text-centered">
-                    <a href="/products" class="button is-success">Shop</a>
+                    <a href="{{ .Site.Params.topCategories.center.url }}"
+                    class="button is-success">
+                    {{ .Site.Params.topCategories.center.buttonText }}</a>
                 </div>
         </div>
         <div class="column is-primary">
-            <div class="title has-background-primary">Top Category</div>
+            <div class="title has-background-primary" align="center">
+                {{ .Site.Params.topCategories.right.title }}</div>
             <figure class="image">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="">
+                <img src="{{ .Site.Params.topCategories.right.img }}" alt="">
             </figure>
                 <div class="box has-text-centered">
-                    <a href="#" class="button is-success">Shop</a>
+                    <a href="{{ .Site.Params.topCategories.right.url }}"
+                    class="button is-success">
+                    {{ .Site.Params.topCategories.right.buttonText }}</a>
                 </div>
         </div>
     </div>

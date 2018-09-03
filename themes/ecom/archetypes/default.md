@@ -1,5 +1,5 @@
-+++
-title: "Product Title"
+---
+title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft false
-+++
+draft: false
+---
