@@ -64,3 +64,9 @@ headerImg = "https://bulma.io/images/bulma-type-white.png"
         title = 'The ones people like the most'
         weight = 3
         url = '/best-sellers'
+    [[menu.main]]
+        identifier = "about"
+        name = "About Us"
+        title = "Who We Are"
+        weight = 4
+        url = "/about"
