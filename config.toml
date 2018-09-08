@@ -48,25 +48,31 @@ headerImg = "https://bulma.io/images/bulma-type-white.png"
         identifier = "blog"
         name = "Blog"
         title = "Blog Section"
-        weight = 1
+        weight = 2
         url = "/blog"
 
     [[menu.main]]
         identifier = "products"
         name = "Products"
         title = "Our Products"
-        weight = 2
+        weight = 3
         url = '/products'
 
     [[menu.main]]
         identifier = "bestSellers"
         name = "Best Sellers"
         title = 'The ones people like the most'
-        weight = 3
+        weight = 4
         url = '/best-sellers'
     [[menu.main]]
         identifier = "about"
         name = "About Us"
         title = "Who We Are"
-        weight = 4
+        weight = 5
         url = "/about"
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        title = "Home"
+        weight = 1
+        url = ""
