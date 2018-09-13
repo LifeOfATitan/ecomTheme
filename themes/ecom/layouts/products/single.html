@@ -1,21 +1,56 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+{{ partial "head.html" .}}
+<title>{{ .Params.Name }}</title>
 <body>
 
-    <h1 class="title">{{ .Params.Title }}</h1>
+    {{ partial "header.html" .}}
 
-    <p>{{ .Params.price }}</p>
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <div class='carousel carousel-animated carousel-animate-slide'>
+              <div class='carousel-container'>
+                    {{ $url := .Title | printf "/products/%s"}}
+                    {{ $folder := .Title | printf "/themes/ecom/static/products/%s"}}
+                    {{ $files := readDir $folder }}
+                    {{ range $files }}
+                <div class='carousel-item has-background is-active'>
+                  <img class="is-background" src="{{$files}}" alt="" style="width:940px;height:600px;"/>
+                </div>
+                <!-- <div class='carousel-item has-background'>
+                  <img class="is-background" src="/pie/pie2.jpeg" alt="" style="width:940px;height:600px;"/>
+                </div> -->
+                {{ end}}
+                <!-- <div class='carousel-item has-background'>
+                  <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt=""/>
+                </div>
+                <div class='carousel-item has-background'>
+                  <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
+                </div> -->
+              </div>
+              <div class="carousel-navigation is-overlay">
+                <div class="carousel-nav-left">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-nav-right">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="column">
+            Description and stuff go here
+        </div>
+    </div>
 
-    <p>{{ .Params.size }}</p>
+    {{ partial "footer.html" .}}
 
-    <p>{{.Content}}</p>
-
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+             var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+         });
+    </script>
 
 </body>
-</html> -->
+</html>

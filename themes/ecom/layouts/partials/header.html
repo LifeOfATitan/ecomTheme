@@ -1,25 +1,29 @@
 <header>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="{{ .Site.Params.headerImg }}" alt="Logo">
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHero">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHero" class="navbar-menu">
-          <div class="navbar-end">
-              {{ $currentPage := . }}
-              {{ range .Site.Menus.main }}
-            <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}/">{{ .Name }}</a>
-              {{ end }}
+    <section class="hero is-primary is-medium">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="{{ .Site.Params.headerImg }}" alt="Logo">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHero">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHero" class="navbar-menu">
+              <div class="navbar-end">
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.main }}
+                <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}/">{{ .Name }}</a>
+                  {{ end }}
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
-
+    </section>
 </header>
